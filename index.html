@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Pure Clound Host</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
+	<meta name="description" content="Scroll based CSS Anmiation"/>
+	<meta name="author" content="Mina"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="keywords" content="Scroll, CSS, Animation, server, responsive"/> <!--site search keywords in web -->
+	<meta name="viewport" content="width=device-width, inintial-scale=1"/>
+
+	<!-- icons fontawesome -->
+	<script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" integrity="sha384-haqrlim99xjfMxRP6EWtafs0sB1WKcMdynwZleuUSwJR0mDeRYbhtY+KPMr+JL6f" crossorigin="anonymous"></script>
+
+	<!--webfont script load is a bit faster: montserrat, raleway-->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Source Sans Pro:300,600,700']
+        }
+      });
+    </script>
+    <!--bootstrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/default.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <!--higher priority, if the stylesheets come at last-->
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <!--logo a tag-->
+            <h1 class="logo_text"><a href=""><em>pure</em>cloudhost</a></h1>
+        </div>
+    </header>
+    <main>
+        <section class="slogan">
+            <div class="container">
+                <!--parents row > middel-device 6column * 2: div.row>div.col-md-6*2-->
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="images/server_img.png" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Free SDD Cloud Hosting</h2>
+                        <p class="main_tt">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+                        <a href="" class="main_tt">Give me that free stuff</a> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonial">
+            <h2 class="hidden">testimonial</h2>
+            <blockquote class="container">
+                <p class="main_tt">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+                <small class="from">- alikerock</small>
+            </blockquote>
+        </section>
+        <section class="control">
+            <div class="row">
+                <!--div.row>div.col-md-4+div.col-md-7 & offset-->
+                <div class="col-md-4 offset-md-1 device">
+                    <h3>Control from Any Device</h3>
+                    <p class="sub_tt">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+                </div>
+                <div class="col-md-7 appliance">
+                    <img src="images/monitor.png" alt="" id="monitor">
+                    <img src="images/phone.png" alt="" id="phone">
+                </div>
+            </div>
+        </section>
+        <section class="features">
+            <h2 class="hidden">features</h2> <!--html important to have, but css not-->
+            <div class="container">
+                <!--div.row>div.col-md-4*3>img+h4-->
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="images/feature_icon_speed.png" alt="">
+                        <h4>spee</h4>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/feature_icon_smart.png" alt="">
+                        <h4>smart</h4>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/feature_icon_support.png" alt="">
+                        <h4>support</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="location">
+            <!--div.stripes[id="s$"]*12 different id for transition slide down--> 
+            <div class="stripes">
+                <div class="stripe" id="s1"></div>
+                <div class="stripe" id="s2"></div>
+                <div class="stripe" id="s3"></div>
+                <div class="stripe" id="s4"></div>
+                <div class="stripe" id="s5"></div>
+                <div class="stripe" id="s6"></div>
+                <div class="stripe" id="s7"></div>
+                <div class="stripe" id="s8"></div>
+                <div class="stripe" id="s9"></div>
+                <div class="stripe" id="s10"></div>
+                <div class="stripe" id="s11"></div>
+                <div class="stripe" id="s12"></div>
+            </div>
+            <div class="container contents">
+                <div class="row">
+                    <div class="col-md-6 map">
+                        <img src="images/location_map.png" alt="" id="location_map">
+                        <img src="images/location_radar.png" alt="" id="radar">
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="server">Over 50 server location</h4>
+                        <p class="main_tt">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+                    </div>
+                </div>
+             </div>  
+        </section>
+    </main>
+</body>

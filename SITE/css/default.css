@@ -1,0 +1,117 @@
+/*COMMON CSS not loaded, because bootstrap reset a lot of them self*/
+
+/*------------------------MY RESET----------------------*/
+html, body {margin:0; padding:0; width: 100%; height: 100%;}
+
+h1,h2,h3,h4, ul, li, p, a {
+    margin:0;
+    padding:0;
+    font-size: 100%;
+    color: #000;
+    text-decoration: none;
+    line-height: 1;
+}
+img {vertical-align: top;}
+em {font-style: normal;}
+.hidden {display:none;}
+
+/*---------------------TYPHOGRAPHY---------------------*/
+* {
+    -webkit-font-smoothing: antialiased; /*font pixel antialiased*/
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+body {font-family: "Source Sans Pro", sans-serif; font-weight: 300;}
+
+h1 {font: 24px "Source Sans Pro", sans-serif; text-transform: uppercase; color: #fff; line-height: 82px;} 
+em {font-weight: 700;}
+h2 {font: 50px/82px "Source Sans Pro", sans-serif;}
+h3 {font: 35px/68px "Source Sans Pro", sans-serif;}
+.main_tt {font:28px/38px "Source Sans Pro", sans-serif;}
+.sub_tt {font-size: 18px; line-height: 27px;}
+h4 {font: 40px "Source Sans Pro", sans-serif; font-weight: 400;}
+
+/*LAYOUT*/
+.container {
+    width: 1170px; margin: 0 auto;
+}
+/*HEADER*/
+header {height: 82px; background-color: #2c2f36; text-align: center;}
+/*SLOGAN*/
+.slogan {
+    background-color: #e2e2e2;
+    padding: 80px 0;
+}
+.slogan .container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.slogan .row a{
+    width: 370px; height: 76px; border: none; background-color: #00c494; margin: 20px 0;  line-height: 76px;
+    border-radius: 3px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+    }
+/*TESTIMONAL*/
+.testimonial {
+    background-color: #f0f0f0;
+    padding: 45px 0;
+}
+.testimonial small.from {text-align: center; display:block; font-style: italic;}
+/*CONTROL*/
+.control {padding: 80px 0;}
+.control .device {padding-bottom: 100px;}
+.control .appliance {position: relative;}
+.control .appliance img {position: absolute; left: 70px; opacity: 0;
+}
+/*CSS ANMIATION by ScrollDown*/
+.animate {
+    animation: fadeIn 1s forwards ease-in;
+    transition: 2s ease-in-out;
+}
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+#phone {margin-top: 40px;}
+#phone.animate {transform: translateX(10em);}
+#monitor.animate {transform: translateX(10em);}
+
+.features {background-color: #f0f0f0; padding: 80px 0 70px 0px;}
+.features .container {display: flex; justify-content: space-between;}
+.features .container div {width: 170px; height: 230px; text-align: center;}
+.features .container div p {font-size: 30px; text-transform: uppercase; line-height: 60px; font-family: "Source Sans Pro", sans-serif; font-weight: 400;}
+
+.location {
+    background-image: linear-gradient(90deg, #36383c 16.67%, #444850 16.67%, #36383c 33.33%, #1e2026 33.33%, #1e2026 50%, #444850 50%, #444850 66.67%, #36383c 66.67%, #36383c 83.33%, #1e2026 83.33%, #1e2026 100%);
+    background-size: 768.00px 768.00px;
+    padding: 90px 0;
+}
+.location .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.location .loc_img {width: 600px; height: 345px; position: relative;}
+
+.location .loc_img .img_map{
+    background-image: url(../images/location_map.png);
+    width: 381px; height: 234px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute; top: 55px; left: 10px; right: 0; bottom: 0;
+}
+.location .loc_img .img_rander {
+    background-image: url(../images/location_radar.png); width: 345px; height: 345px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute; top: 0; left: 25px; right: 0; bottom: 0;
+}
+.location .loc_text {width: 570px; color: #fff; padding: 50px 0;}
+.location .loc_text .server {font-weight: 600; padding-bottom: 50px;}

@@ -64,54 +64,71 @@ header {height: 82px; background-color: #2c2f36; text-align: center;}
     padding: 45px 0;
 }
 .testimonial small.from {text-align: center; display:block; font-style: italic;}
+blockquote.container {padding-left:0;}
 /*CONTROL*/
 .control {padding: 80px 0;}
 .control .device {padding-bottom: 100px;}
 .control .appliance {position: relative;}
-.control .appliance img {position: absolute; left: 70px; opacity: 0;
-}
+.control .appliance img {position: absolute; left: 70px; opacity: 0;}
+
 /*CSS ANMIATION by ScrollDown*/
-.animate {
+.animate, .grow-img, .animate_down{ 
     animation: fadeIn 1s forwards ease-in;
-    transition: 2s ease-in-out;
+    transition: 2s ease-in-out; 
 }
 @keyframes fadeIn{
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
 #phone {margin-top: 40px;}
-#phone.animate {transform: translateX(10em);}
-#monitor.animate {transform: translateX(10em);}
+#phone.animate {transform: translateX(28em);}
+#monitor.animate {transform: translateX(16em);}
 
+/*FEATURES*/
 .features {background-color: #f0f0f0; padding: 80px 0 70px 0px;}
-.features .container {display: flex; justify-content: space-between;}
-.features .container div {width: 170px; height: 230px; text-align: center;}
-.features .container div p {font-size: 30px; text-transform: uppercase; line-height: 60px; font-family: "Source Sans Pro", sans-serif; font-weight: 400;}
+.features .item {text-align: center;}
+.features .item img {width: 0; height:0;}
+/*CSS ANIMATION GROW IMG*/
+.features .item img.grow-img {width: 169px; height:169px;}
+.features .container div h4 {color: #2c2f36; font-size: 30px; text-transform: uppercase; line-height: 60px; font-family: "Source Sans Pro", sans-serif; font-weight: 400; opacity: 0;}
 
-.location {
-    background-image: linear-gradient(90deg, #36383c 16.67%, #444850 16.67%, #36383c 33.33%, #1e2026 33.33%, #1e2026 50%, #444850 50%, #444850 66.67%, #36383c 66.67%, #36383c 83.33%, #1e2026 83.33%, #1e2026 100%);
-    background-size: 768.00px 768.00px;
-    padding: 90px 0;
-}
-.location .container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.location .loc_img {width: 600px; height: 345px; position: relative;}
+/*LOCATION*/
 
-.location .loc_img .img_map{
-    background-image: url(../images/location_map.png);
-    width: 381px; height: 234px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute; top: 55px; left: 10px; right: 0; bottom: 0;
+.location {position: relative;}
+.location .contents {position: absolute; top:0; left:0; right:0; }
+.location .map {position: relative;}
+
+.stripes {display: flex;}
+.stripes .stripe {width: 10%; height: 0px;} /*ANIMATION HEIGHT 0 --> 512px */
+/*Transition-delay: 0.1s to 1s - can be good altanative for javascript*/
+#s1 {background: #2c2f36; }
+#s2 {background: #444850; }
+#s3 {background: #36383c; }
+#s4 {background: #1e2026; }
+#s5 {background: #444850; }
+#s6 {background: #2b2d30; }
+#s7 {background: #1e2026; }
+#s8 {background: #36383c; }
+#s9 {background: #444850; }
+#s10 {background: #2c2f36;}
+
+
+#map {margin-left: 70px; margin-top: 120px;}
+#radar {
+    position: absolute; 
+    top: 90px; 
+    left: 109px;
+    /*ANIMATION ROTATION FOR RADAR*/
+    animation: rotation 10s infinite linear;
 }
-.location .loc_img .img_rander {
-    background-image: url(../images/location_radar.png); width: 345px; height: 345px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute; top: 0; left: 25px; right: 0; bottom: 0;
+@keyframes rotation {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
 }
-.location .loc_text {width: 570px; color: #fff; padding: 50px 0;}
-.location .loc_text .server {font-weight: 600; padding-bottom: 50px;}
+.stripes .stripe.animate_down {height: 512px;}
+
+.location .contents_tt {
+    position: absolute; top: 160px; right: 0px; 
+}
+.location .contents_tt >* {color: #fff;}
+.location .contents_tt .server {font-weight: 600; line-height: 78px;}

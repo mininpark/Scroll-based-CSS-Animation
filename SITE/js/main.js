@@ -23,8 +23,8 @@ $(function(){  /*scroll down for monitor and phone animation fade in*/
 
             //$location.find('.stripe').addClass('animate_down')
             /*ALTERNATIVE 1:
-            //setTimeout (function) {acutally to do --> $('#s1').addClass('animate_down');}, time);
- 
+            setTimeout (function) {acutally to do --> $('#s1').addClass('animate_down');}, time);
+
             setTimeout(function(){ $('#s1').addClass('animate_down');}, 100);
             setTimeout(function(){ $('#s2').addClass('animate_down');}, 200);
             setTimeout(function(){ $('#s3').addClass('animate_down');}, 300);
@@ -36,6 +36,7 @@ $(function(){  /*scroll down for monitor and phone animation fade in*/
             setTimeout(function(){ $('#s9').addClass('animate_down');}, 900);
             setTimeout(function(){ $('#s10').addClass('animate_down');}, 1000);
             */
+
             //ALTERNATIVE 2: EACH METHOD
             $('.stripe').each(function(idx){
                 var $this = $(this);

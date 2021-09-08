@@ -2,7 +2,6 @@
 
 - [Overview](https://www.notion.so/Rocksweb-Scroll-based-CSS-21b351ff40af4fb9a07ffaf350432efd)
     - [The challenge](https://www.notion.so/Rocksweb-Scroll-based-CSS-21b351ff40af4fb9a07ffaf350432efd)
-    - [Screenshot](https://www.notion.so/Rocksweb-Scroll-based-CSS-21b351ff40af4fb9a07ffaf350432efd)
     - [Links](https://www.notion.so/Rocksweb-Scroll-based-CSS-21b351ff40af4fb9a07ffaf350432efd)
 - [My process](https://www.notion.so/Rocksweb-Scroll-based-CSS-21b351ff40af4fb9a07ffaf350432efd)
     - [Built with](https://www.notion.so/Rocksweb-Scroll-based-CSS-21b351ff40af4fb9a07ffaf350432efd)
@@ -17,12 +16,6 @@
 Users should be able to:
 
 - Anmiation with scroll down
-
-### Screenshot
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/98c5cdd0-965b-46ec-94bc-336f97e46a21/Untitled.png)
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/04f88931-852e-405b-8381-5c53fa6a9d84/Untitled.png)
 
 ### Links
 

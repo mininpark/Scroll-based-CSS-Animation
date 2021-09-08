@@ -81,32 +81,16 @@ blockquote.container {padding-left:0;}
     100% {opacity: 1;}
 }
 #phone {margin-top: 40px;}
-.visible #phone {
-    transform: translateX(28em);
-    animation: fadeIn 1s forwards ease-in;
-    transition: 2s ease-in-out; 
-}
-.visible #monitor {
-    transform: translateX(16em);
-    animation: fadeIn 1s forwards ease-in;
-    transition: 2s ease-in-out; 
-}
-
+#phone.animate {transform: translateX(28em);}
+#monitor.animate {transform: translateX(16em);}
 
 /*FEATURES*/
 .features {background-color: #f0f0f0; padding: 80px 0 70px 0px;}
 .features .item {text-align: center;}
 .features .item img {width: 0; height:0;}
-
 /*CSS ANIMATION GROW IMG*/
-.features.visible .item img {
-    width: 169px; height:169px;
-    animation: fadeIn 1s forwards ease-in;
-    transition: 2s ease-in-out; 
-}
+.features .item img.grow-img {width: 169px; height:169px;}
 .features .container div h4 {color: #2c2f36; font-size: 30px; text-transform: uppercase; line-height: 60px; font-family: "Source Sans Pro", sans-serif; font-weight: 400; opacity: 0;}
-
-.features.visible .container div h4 {    animation: fadeIn 1s forwards ease-in;}
 
 /*LOCATION*/
 
@@ -115,26 +99,18 @@ blockquote.container {padding-left:0;}
 .location .map {position: relative;}
 
 .stripes {display: flex;}
-.stripes .stripe {width: 10%; height: 0px;} 
-
-/*ANIMATION HEIGHT 0 --> 512px */
-.visible .stripes .stripe {
-    width: 10%; height: 512px;
-    animation: fadeIn 1s forwards ease-in;
-    transition: 2s ease-in-out; 
-}
-
+.stripes .stripe {width: 10%; height: 0px;} /*ANIMATION HEIGHT 0 --> 512px */
 /*Transition-delay: 0.1s to 1s - can be good altanative for javascript*/
-#s1 {background: #2c2f36; transition-delay: 0.1s;}
-#s2 {background: #444850;  transition-delay: 0.2s;}
-#s3 {background: #36383c;  transition-delay: 0.3s;}
-#s4 {background: #1e2026;  transition-delay: 0.4s;}
-#s5 {background: #444850;  transition-delay: 0.5s;}
-#s6 {background: #2b2d30;  transition-delay: 0.6s;}
-#s7 {background: #1e2026;  transition-delay: 0.7s;}
-#s8 {background: #36383c;  transition-delay: 0.8s;}
-#s9 {background: #444850;  transition-delay: 0.9s;}
-#s10 {background: #2c2f36; transition-delay: 1s;}
+#s1 {background: #2c2f36; }
+#s2 {background: #444850; }
+#s3 {background: #36383c; }
+#s4 {background: #1e2026; }
+#s5 {background: #444850; }
+#s6 {background: #2b2d30; }
+#s7 {background: #1e2026; }
+#s8 {background: #36383c; }
+#s9 {background: #444850; }
+#s10 {background: #2c2f36;}
 
 
 #map {margin-left: 70px; margin-top: 120px;}
